@@ -27,3 +27,9 @@ Presentation->splash-> bloc,pages(splash.dart),Widgets
 core -> configs -> assets -> app_vectors.dart
 
 flutter_svg: -> pubspec.yaml
+
+DebugcheckMode -> false
+
+splash page done!
+_________________________
+Get Started Page
