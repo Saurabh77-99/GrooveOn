@@ -1,0 +1,29 @@
+Clean Architecture! -> Large and Complex project
+
+Layers -> 3 -> Domain, Data and Presentation
+
+Presentation -> Bloc, Pages, Widgets
+Domain -> Entities,Repository, Usecases
+Data -> Models, Repository, Sources
+Core -> Configs -> Theme
+Common
+
+Project Structure Done!
+_________________________
+app_colors
+app_theme
+
+assets folder in the root folder!
+In Assets -> Fonts,Images, Vectors
+
+Fonts download in fonts folder!
+
+pubspec.yaml -> assets path, font weight
+_________________________
+splash page 
+
+Presentation->splash-> bloc,pages(splash.dart),Widgets
+
+core -> configs -> assets -> app_vectors.dart
+
+flutter_svg: -> pubspec.yaml
