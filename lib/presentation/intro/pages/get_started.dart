@@ -4,6 +4,7 @@ import 'package:grooveon/common/widgets/button/basic_button.dart';
 import 'package:grooveon/core/configs/assets/app_images.dart';
 import 'package:grooveon/core/configs/assets/app_vectors.dart';
 import 'package:grooveon/core/configs/theme/app_colors.dart';
+import 'package:grooveon/presentation/choose_mode/pages/choose_mode.dart';
 
 class GetStartedPage extends StatelessWidget {
   const GetStartedPage({super.key});
@@ -14,7 +15,7 @@ class GetStartedPage extends StatelessWidget {
       body: Stack(
         children: [
           Container(
-            padding: EdgeInsets.symmetric(
+            padding: const EdgeInsets.symmetric(
               vertical: 40,
               horizontal: 40
             ),
@@ -26,47 +27,59 @@ class GetStartedPage extends StatelessWidget {
                 )
               )
             ),
-            child: Column(
-              children: [
-                Align(
-                  alignment: Alignment.topCenter,
-                  child: SvgPicture.asset(
-                    AppVectors.logo
-                  ),
-                ),
-                Spacer(),
-                Text(
-                  'Enjoy Listening to Music!',
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                    fontSize: 18
-                  ),
-                ),
-                SizedBox(height: 21,),
-                Text(
-                  'Enjoy Listening to Music! Lorem ipsum dolor sit amet',
-                  style: TextStyle(
-                    fontWeight: FontWeight.w500,
-                    color: AppColors.grey,
-                    fontSize: 13
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-                SizedBox(height: 20,),
-                BasicButton(
-                  onPressed:(){
-                    
-                  }, 
-                  title: 'Get Started'
-                )
-              ],
-            ),
           ),  
 
           Container(
             color: Colors.black.withOpacity(0.15),
-          )
+          ),
+
+          Padding(
+            padding: const EdgeInsets.symmetric(
+              vertical: 40,
+              horizontal: 40
+            ),
+            child: Column(
+                children: [
+                  Align(
+                    alignment: Alignment.topCenter,
+                    child: SvgPicture.asset(
+                      AppVectors.logo
+                    ),
+                  ),
+                  const Spacer(),
+                  const Text(
+                    'Enjoy Listening to Music!',
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                      fontSize: 18
+                    ),
+                  ),
+                  const SizedBox(height: 21,),
+                  const Text(
+                    'Enjoy Listening to Music! Lorem ipsum dolor sit amet',
+                    style: TextStyle(
+                      fontWeight: FontWeight.w500,
+                      color: AppColors.grey,
+                      fontSize: 13
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                  const SizedBox(height: 20,),
+                  BasicButton(
+                    onPressed:(){
+                      Navigator.push(
+                        context, 
+                        MaterialPageRoute(
+                          builder: (BuildContext context) => const ChooseModePage()
+                        )
+                      );
+                    }, 
+                    title: 'Get Started'
+                  )
+                ],
+              ),
+          ),
         ],
       )
     );
