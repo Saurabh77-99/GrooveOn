@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:grooveon/common/widgets/button/basic_button.dart';
 import 'package:grooveon/core/configs/assets/app_images.dart';
 import 'package:grooveon/core/configs/assets/app_vectors.dart';
 import 'package:grooveon/core/configs/theme/app_colors.dart';
@@ -52,6 +53,13 @@ class GetStartedPage extends StatelessWidget {
                   ),
                   textAlign: TextAlign.center,
                 ),
+                SizedBox(height: 20,),
+                BasicButton(
+                  onPressed:(){
+                    
+                  }, 
+                  title: 'Get Started'
+                )
               ],
             ),
           ),  
