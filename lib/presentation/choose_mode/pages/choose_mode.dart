@@ -67,8 +67,7 @@ class ChooseModePage extends StatelessWidget {
                               filter: ImageFilter.blur(sigmaX: 10,sigmaY: 10),
                               child: Container(
                                 height: 80,
-                                width: 80,
-                                // color: Colors.white, 
+                                width: 80, 
                                 decoration: BoxDecoration(
                                   color: Color(0xff30393C).withOpacity(0.5),
                                   shape: BoxShape.circle
@@ -99,8 +98,7 @@ class ChooseModePage extends StatelessWidget {
                               filter: ImageFilter.blur(sigmaX: 10,sigmaY: 10),
                               child: Container(
                                 height: 80,
-                                width: 80,
-                                // color: Colors.white, 
+                                width: 80, 
                                 decoration: BoxDecoration(
                                   color: Color(0xff30393C).withOpacity(0.5),
                                   shape: BoxShape.circle,
