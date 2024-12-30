@@ -33,3 +33,8 @@ DebugcheckMode -> false
 splash page done!
 _________________________
 Get Started Page
+
+Choose Mode UI page
+_________________________
+bloc
+hydrated_bloc
