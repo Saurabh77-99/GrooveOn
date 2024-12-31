@@ -7,6 +7,7 @@ import 'package:grooveon/common/widgets/button/basic_button.dart';
 import 'package:grooveon/core/configs/assets/app_images.dart';
 import 'package:grooveon/core/configs/assets/app_vectors.dart';
 import 'package:grooveon/core/configs/theme/app_colors.dart';
+import 'package:grooveon/presentation/auth/pages/signup_signin.dart';
 import 'package:grooveon/presentation/choose_mode/bloc/theme_cubit.dart';
 
 class ChooseModePage extends StatelessWidget {
@@ -141,7 +142,7 @@ class ChooseModePage extends StatelessWidget {
                       Navigator.push(
                         context, 
                         MaterialPageRoute(
-                          builder: (BuildContext context) => const ChooseModePage()
+                          builder: (BuildContext context) => const SignUpSignIn()
                         )
                       );
                     }, 
